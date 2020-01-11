@@ -7,4 +7,23 @@ Button{
 
 #multiply, #divide, #equal, #plus, #minus{
     -fx-background-color:  #ff9a00;
+    -fx-text-fill: #ffff;
+}
+
+#multiply{
+    -fx-font-size: 18px;
+}
+#divide{
+    -fx-font-size: 15px;
+}
+#minus{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+#plus{
+    -fx-font-size: 20px;
+}
+#equal{
+
+    -fx-font-size: 20px;
 }
