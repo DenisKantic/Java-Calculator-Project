@@ -24,6 +24,8 @@ Button{
     -fx-font-size: 20px;
 }
 #equal{
-
     -fx-font-size: 20px;
+}
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #comma{
+    -fx-background-color: #D8D8D8;
 }
