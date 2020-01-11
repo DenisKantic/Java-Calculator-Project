@@ -5,3 +5,6 @@ Button{
     -fx-border-color: gray;
 }
 
+#multiply, #divide, #equal, #plus, #minus{
+    -fx-background-color:  #ff9a00;
+}
