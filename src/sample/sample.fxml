@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <GridPane layoutX="-6.0" layoutY="250.0" prefWidth="270.0" style="-fx-background-color: #354a69;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="0.0">
         <columnConstraints>
@@ -20,16 +20,15 @@
         </columnConstraints>
         <rowConstraints>
             <RowConstraints minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="47.0" vgrow="NEVER" />
           <RowConstraints minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Button fx:id="delete" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" style="-fx-border-radius: none;" stylesheets="@style.css" text="&lt;--" GridPane.columnIndex="1" />
-            <Button fx:id="percentage" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" style="-fx-border-radius: none;" stylesheets="@style.css" text="\%" GridPane.columnIndex="2" />
+            <Button fx:id="percentage" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="\%" GridPane.columnIndex="2" />
             <Button fx:id="divide" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="/" textFill="WHITE" GridPane.columnIndex="3" />
-            <Button fx:id="seven" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="7" GridPane.rowIndex="1" />
             <Button fx:id="eight" layoutX="77.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button fx:id="nine" layoutX="77.0" layoutY="40.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Button fx:id="multiply" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="x" GridPane.columnIndex="3" GridPane.rowIndex="1" />
@@ -37,17 +36,22 @@
             <Button fx:id="five" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Button fx:id="six" layoutX="77.0" layoutY="70.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Button fx:id="minus" layoutX="144.0" layoutY="70.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Button fx:id="one" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="1" GridPane.rowIndex="3" />
+            <Button fx:id="one" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#one" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="1" GridPane.rowIndex="3" />
             <Button fx:id="two" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Button fx:id="three" layoutX="77.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button fx:id="AC" layoutX="77.0" layoutY="40.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="69.0" style="-fx-border-style: 1px solid black;" stylesheets="@style.css" text="AC" />
             <Button fx:id="plus" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button fx:id="zero" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="138.0" stylesheets="@style.css" text="0" GridPane.columnSpan="3" GridPane.rowIndex="4" />
+            <Button fx:id="zero" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#zero" prefHeight="47.0" prefWidth="138.0" stylesheets="@style.css" text="0" GridPane.columnSpan="3" GridPane.rowIndex="4" />
             <Button fx:id="comma" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
             <Button fx:id="equal" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" style="-fx-border-style: black;" stylesheets="@style.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="AC" layoutX="79.0" layoutY="57.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="AC" />
+            <Button fx:id="seven" layoutX="79.0" layoutY="10.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="69.0" stylesheets="@style.css" text="7" GridPane.rowIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
          </children>
       </GridPane>
-      <Label fx:id="mainLabel" alignment="BOTTOM_RIGHT" layoutX="113.0" layoutY="-2.0" prefHeight="116.0" prefWidth="270.0" style="-fx-background-color: #354a69;" text="Label" textFill="#f8f8f8" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+      <Label fx:id="mainLabel" alignment="BOTTOM_RIGHT" layoutX="113.0" layoutY="-2.0" prefHeight="116.0" prefWidth="270.0" style="-fx-background-color: #354a69;" stylesheets="@style.css" textFill="#f8f8f8" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -57,6 +61,6 @@
          <font>
             <Font name="Calibri Light" size="19.0" />
          </font></Label>
-      <Label fx:id="history" alignment="CENTER_RIGHT" layoutX="143.0" prefHeight="39.0" prefWidth="127.0" text="History" textFill="#f8f8f8" />
+      <Label fx:id="history" alignment="CENTER_RIGHT" layoutX="143.0" prefHeight="39.0" prefWidth="127.0" textFill="#f8f8f8" />
    </children>
 </AnchorPane>

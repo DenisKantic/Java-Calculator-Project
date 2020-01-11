@@ -3,6 +3,7 @@ Button{
     -fx-border-width: 1px;
     -fx-border-style: solid;
     -fx-border-color: gray;
+    -fx-border-radius: none;
 }
 
 #multiply, #divide, #equal, #plus, #minus{
@@ -28,4 +29,13 @@ Button{
 }
 #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #comma{
     -fx-background-color: #D8D8D8;
+    -fx-font-size: 21px;
+}
+#AC, #delete, #percentage{
+    -fx-font-size: 17px;
+    -fx-background-color: #B0B0B0;
+}
+
+#mainLabel{
+    -fx-font-size: 25px;
 }
