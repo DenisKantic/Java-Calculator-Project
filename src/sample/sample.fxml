@@ -26,7 +26,7 @@
           <RowConstraints minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="delete" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" style="-fx-border-radius: none;" stylesheets="@style.css" text="&lt;--" GridPane.columnIndex="1" />
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="69.0" style="-fx-border-radius: none;" stylesheets="@style.css" text="&lt;--" GridPane.columnIndex="1" />
             <Button fx:id="percentage" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="\%" GridPane.columnIndex="2" />
             <Button fx:id="divide" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="/" textFill="WHITE" GridPane.columnIndex="3" />
             <Button fx:id="eight" layoutX="77.0" layoutY="10.0" mnemonicParsing="false" onAction="#eight" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />

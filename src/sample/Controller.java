@@ -68,14 +68,32 @@ public class Controller {
 
     }
 
-
+////////////////////////////////////////////////////////////////
 
 
     //METHOD FOR DELLETING ALL INPUT AND HISTORY LABEL
+
+    // DELETE ALL
     public void AC(){
 
             mainLabel.setText("");
             history.setText("");
+    }
+
+    // DELETE ONE BY ONE
+    public void delete(){
+
+            int length=mainLabel.getText().length(); // get length of the string
+            int number=mainLabel.getText().length()-1; // this -1 means substract 1 from length
+        String store;
+
+        if(length>0){
+
+            StringBuilder back=new StringBuilder(mainLabel.getText()); // store the input here
+            back.deleteCharAt(number); // deleting with this command
+            store=back.toString();  // transform it back to string, we want String input not the math numerical
+            mainLabel.setText(store); // now finished string place on display
+        }
     }
 
 
