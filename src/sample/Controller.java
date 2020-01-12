@@ -7,12 +7,13 @@ public class Controller {
         public Label mainLabel;
         public Label history;
 
-
+// METHODS FOR PRINTING NUMBERS ON DISPLAY ( mainLabel ) WHEN USER CLICKS ON BUTTON, IT WILL APPEAR IN DISPLAY
         public void zero(){
             mainLabel.setText(mainLabel.getText()+"0");
         }
 
         public void one(){
+
             mainLabel.setText(mainLabel.getText()+"1");
         }
     public void two(){
@@ -39,5 +40,43 @@ public class Controller {
     public void nine(){
         mainLabel.setText(mainLabel.getText()+"9");
     }
+//////////////////////////////////////////////////////////////////////////
+
+    //METHODS FOR MATH OPERATION
+
+    public void divide(){
+
+    }
+
+    public void multiply(){
+
+    }
+
+    public void minus(){
+
+    }
+
+    public void plus(){
+
+    }
+
+    public void percentage(){
+
+    }
+
+    public void equal(){
+
+    }
+
+
+
+
+    //METHOD FOR DELLETING ALL INPUT AND HISTORY LABEL
+    public void AC(){
+
+            mainLabel.setText("");
+            history.setText("");
+    }
+
 
 }
