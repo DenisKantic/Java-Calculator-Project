@@ -60,10 +60,6 @@ public class Controller {
 
     }
 
-    public void percentage(){
-
-    }
-
     public void equal(){
 
     }
