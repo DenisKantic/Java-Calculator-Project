@@ -1,9 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
+
 Button{
 
     -fx-border-width: 1px;
     -fx-border-style: solid;
     -fx-border-color: gray;
     -fx-border-radius: none;
+    -fx-font-family: 'Public Sans', sans-serif;;
 }
 
 #multiply, #divide, #equal, #plus, #minus{
@@ -38,4 +42,7 @@ Button{
 
 #mainLabel{
     -fx-font-size: 25px;
+}
+#dot{
+    -fx-font-size: 21px;
 }

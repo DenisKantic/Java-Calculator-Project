@@ -39,3 +39,6 @@ Button{
 #mainLabel{
     -fx-font-size: 25px;
 }
+#dot{
+    -fx-font-size: 21px;
+}

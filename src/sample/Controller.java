@@ -1,9 +1,11 @@
 package sample;
 
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 public class Controller {
 
+    @FXML
         public Label mainLabel;
         public Label history;
 
@@ -40,6 +42,10 @@ public class Controller {
     public void nine(){
         mainLabel.setText(mainLabel.getText()+"9");
     }
+
+    public void dot(){
+            mainLabel.setText(mainLabel.getText()+".");
+    }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //METHODS FOR MATH OPERATION
@@ -73,8 +79,10 @@ public class Controller {
         history.setText(num+"+"); // this will store our cleaned input above so we can type another number
     }
 
+    // button for calculating operations
     public void equal(){
-
+        calculate();
+        history.setText(""); // when we press equal button, this will erase input above
     }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////

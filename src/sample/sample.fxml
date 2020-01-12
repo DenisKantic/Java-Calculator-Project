@@ -27,21 +27,21 @@
         </rowConstraints>
          <children>
             <Button fx:id="delete" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="69.0" style="-fx-border-radius: none;" stylesheets="@style.css" text="&lt;--" GridPane.columnIndex="2" />
-            <Button fx:id="divide" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="/" textFill="WHITE" GridPane.columnIndex="3" />
+            <Button fx:id="divide" mnemonicParsing="false" onAction="#divide" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="/" textFill="WHITE" GridPane.columnIndex="3" />
             <Button fx:id="eight" layoutX="77.0" layoutY="10.0" mnemonicParsing="false" onAction="#eight" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button fx:id="nine" layoutX="77.0" layoutY="40.0" mnemonicParsing="false" onAction="#nine" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="multiply" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="x" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="multiply" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#multiply" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="x" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <Button fx:id="four" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#four" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="4" GridPane.rowIndex="2" />
             <Button fx:id="five" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#five" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Button fx:id="six" layoutX="77.0" layoutY="70.0" mnemonicParsing="false" onAction="#six" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button fx:id="minus" layoutX="144.0" layoutY="70.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="minus" layoutX="144.0" layoutY="70.0" mnemonicParsing="false" onAction="#minus" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             <Button fx:id="one" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#one" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="1" GridPane.rowIndex="3" />
             <Button fx:id="two" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#two" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Button fx:id="three" layoutX="77.0" layoutY="100.0" mnemonicParsing="false" onAction="#three" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button fx:id="plus" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="plus" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#plus" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
             <Button fx:id="zero" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#zero" prefHeight="47.0" prefWidth="138.0" stylesheets="@style.css" text="0" GridPane.columnSpan="3" GridPane.rowIndex="4" />
-            <Button fx:id="comma" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button fx:id="equal" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="69.0" style="-fx-border-style: black;" stylesheets="@style.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="dot" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#dot" prefHeight="50.0" prefWidth="69.0" stylesheets="@style.css" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="equal" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#equal" prefHeight="50.0" prefWidth="69.0" style="-fx-border-style: black;" stylesheets="@style.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
             <Button fx:id="AC" layoutX="79.0" layoutY="57.0" mnemonicParsing="false" onAction="#AC" prefHeight="47.0" prefWidth="138.0" stylesheets="@style.css" text="AC" GridPane.columnSpan="2" />
             <Button fx:id="seven" layoutX="79.0" layoutY="10.0" mnemonicParsing="false" onAction="#seven" prefHeight="49.0" prefWidth="69.0" stylesheets="@style.css" text="7" GridPane.rowIndex="1">
                <opaqueInsets>
