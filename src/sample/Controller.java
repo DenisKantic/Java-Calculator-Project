@@ -40,31 +40,44 @@ public class Controller {
     public void nine(){
         mainLabel.setText(mainLabel.getText()+"9");
     }
-//////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //METHODS FOR MATH OPERATION
 
     public void divide(){
-
+        num=Double.parseDouble(mainLabel.getText());
+        calculation=4;
+        mainLabel.setText(""); // when we enter a first number and then we click on multiplication, this will clean our first number input
+        history.setText(num+"/"); // this will store our cleaned input above so we can type another number
     }
 
     public void multiply(){
-
+        num=Double.parseDouble(mainLabel.getText());
+        calculation=3;
+        mainLabel.setText(""); // when we enter a first number and then we click on multiplication, this will clean our first number input
+        history.setText(num+"*"); // this will store our cleaned input above so we can type another number
     }
 
     public void minus(){
+        num=Double.parseDouble(mainLabel.getText());
+        calculation=2;
+        mainLabel.setText(""); // when we enter a first number and then we click on multiplication, this will clean our first number input
+        history.setText(num+"-"); // this will store our cleaned input above so we can type another number
 
     }
 
     public void plus(){
-
+        num=Double.parseDouble(mainLabel.getText());
+        calculation=1;
+        mainLabel.setText(""); // when we enter a first number and then we click on multiplication, this will clean our first number input
+        history.setText(num+"+"); // this will store our cleaned input above so we can type another number
     }
 
     public void equal(){
 
     }
 
-////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     //METHOD FOR DELLETING ALL INPUT AND HISTORY LABEL
@@ -92,5 +105,39 @@ public class Controller {
         }
     }
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //METHOD FOR ARITHMETIC OPERATION
+
+        double num,ans;
+        int calculation;
+
+
+    public void calculate(){
+
+           switch (calculation){ // above in methods for plus,minus... we will initialize calculation with calculation=1 for example and then
+                                // it will do in following case for that number we initialize
+
+               case 1: // adition
+                   ans=num+Double.parseDouble(mainLabel.getText()); // convert string into double
+                   mainLabel.setText(Double.toString(ans)); // convert back to string
+                   break;
+
+               case 2: // substraction
+                   ans=num-Double.parseDouble(mainLabel.getText()); // convert string into double
+                   mainLabel.setText(Double.toString(ans)); // convert back to string
+                   break;
+
+               case 3: // multiplication
+                   ans=num*Double.parseDouble(mainLabel.getText()); // convert string into double
+               mainLabel.setText(Double.toString(ans)); // convert back to string
+               break;
+
+               case 4: // divide
+                   ans=num/Double.parseDouble(mainLabel.getText()); // convert string into double
+                   mainLabel.setText(Double.toString(ans)); // convert back to string
+                   break;
+           }
+    }
 
 }
